@@ -28,14 +28,14 @@ if choice.lower() == 'investment':
         A = p * math.pow((1 + r), t)
         print(A, "is the amount: ")
     else:
-        print("Dear user, please kindly select the valid interest type")
+        print("Dear user, please kindly select the valid interest type:")
 
 # else if the user choses bond the calculation below will be excuted using equation provided 
 # and the user is requeated to enter prensent value of the house,interest and number of mounths he/she plan to repay the bond
 elif choice.lower() == 'bond':
     p = float(input("Enter the present value of the house: "))
     i = float(input("Enter The interest rate: "))
-    n = float(input("Enter the number of months you plan to repay the bond: "))
+    n = float(input("Enter the number of months you plan to repay the bond:\n"))
     i = i/100
     i = i/12
     x = (i*p)/(1-(1+i)**(-n))
